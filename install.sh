@@ -27,16 +27,7 @@ TMP_DIR="$(mktemp -d)"
 cleanup() { rm -rf "${TMP_DIR}"; }
 trap cleanup EXIT
 
-# ── banner ───────────────────────────────────────────────
-printf "\n${BOLD}"
-printf "  ██████╗  █████╗ ███╗   ██╗██╗  ██╗\n"
-printf "  ██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝\n"
-printf "  ██║  ██║███████║██╔██╗ ██║█████╔╝ \n"
-printf "  ██║  ██║██╔══██║██║╚██╗██║██╔═██╗ \n"
-printf "  ██████╔╝██║  ██║██║ ╚████║██║  ██╗\n"
-printf "  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝\n"
-printf "${RESET}"
-printf "       ${CYAN}niri config installer${RESET}\n\n"
+printf "\n${BOLD}dank-niri-config installer${RESET}\n\n"
 hr
 
 # ── dependency check ─────────────────────────────────────
@@ -93,7 +84,8 @@ if [[ ${#NEEDS_INSPECT[@]} -gt 0 ]]; then
     printf "\n${BOLD}Would you like to copy the new configs to an inspection folder so you${RESET}\n"
     printf "${BOLD}can manually compare and apply changes?${RESET}\n"
     printf "    Inspection path: ${CYAN}%s${RESET}\n\n" "${INSPECT_BASE}"
-    read -r -p "$(printf "${BOLD}Create inspection folder? [y/N]:${RESET} ")" REPLY
+    printf "${BOLD}Create inspection folder? [y/N]:${RESET} "
+    read -r REPLY </dev/tty
 
     case "${REPLY}" in
         [yY]|[yY][eE][sS])
