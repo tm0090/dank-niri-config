@@ -113,7 +113,7 @@ fi
 # ── summary ──────────────────────────────────────────────
 hr
 printf "\n${GREEN}${BOLD}Done!${RESET}\n\n"
-printf "  Installed configs live in: ${CYAN}%s${RESET}\n" "${TARGET_BASE}"
+printf "  Installed configs in: ${CYAN}%s${RESET}\n" "${TARGET_BASE}"
 [[ ${#NEEDS_INSPECT[@]} -gt 0 ]] && \
     printf "  Skipped (already exist):   ${YELLOW}%s${RESET}\n" "${NEEDS_INSPECT[*]}"
 printf "\n"
