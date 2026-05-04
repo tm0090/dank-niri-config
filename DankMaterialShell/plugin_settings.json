@@ -1,0 +1,15 @@
+{
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "47c066063e7f41ea8e2f29996eb44e77"
+  },
+  "prayerTimes": {
+    "enabled": true,
+    "iconOnly": true,
+    "use12H": true,
+    "school": "1",
+    "method": "1",
+    "lon": "89.9995086",
+    "lat": "23.8695971"
+  }
+}
