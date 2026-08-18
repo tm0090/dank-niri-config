@@ -15,5 +15,5 @@ curl -fsSL https://install.danklinux.com | sh
 ```
 
 
-Dank Linux Website: https://danklinux.com/
-Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
+### Dank Linux Website: https://danklinux.com/
+### Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
