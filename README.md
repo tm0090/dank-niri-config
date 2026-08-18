@@ -8,4 +8,8 @@
 curl -fsSL https://raw.githubusercontent.com/tm0090/dank-niri-config/main/install.sh | bash
 ```
 
- 
+## Install Dank Linux:
+
+```bash
+curl -fsSL https://install.danklinux.com | sh
+```
