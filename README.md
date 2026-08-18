@@ -13,3 +13,7 @@ curl -fsSL https://raw.githubusercontent.com/tm0090/dank-niri-config/main/instal
 ```bash
 curl -fsSL https://install.danklinux.com | sh
 ```
+
+
+Dank Linux Website: https://danklinux.com/
+Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
