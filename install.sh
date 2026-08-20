@@ -21,8 +21,19 @@ git clone "$REPO_URL" "$TARGET_DIR"
 
 # Verify if the clone was successful
 if [ $? -eq 0 ]; then
-    echo "Success! The repository has been cloned to: $TARGET_DIR"
+    echo "Cleaning up unwanted files..."
+    
+    # Remove the .git hidden folder
+    rm -rf "$TARGET_DIR/.git"
+    
+    # Remove README.md (case-insensitive check for common variations)
+    rm -f "$TARGET_DIR"/README.md "$TARGET_DIR"/readme.md
+    
+    # Remove the install script itself
+    rm -f "$TARGET_DIR/install.sh"
+    
+    echo "Success! The configuration files are ready in: $TARGET_DIR"
 else
-    echo "Error: Failed to clone the repository. Check the URL or your internet connection."
+    echo "Error: Failed to clone the repository."
     exit 1
 fi
