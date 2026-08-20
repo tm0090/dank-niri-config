@@ -1,4 +1,38 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+# Define the target directory
+TARGET_DIR="$HOME/Downloads/inspect-niri-settings"
+REPO_URL=$1
+
+# Check if a URL was provided
+if [ -z "$REPO_URL" ]; then
+    echo "Error: Please provide a GitHub repository URL."
+    echo "Usage: ./install.sh <github-repo-url>"
+    exit 1
+fi
+
+echo "Setting up repository in $TARGET_DIR..."
+
+# Ensure the Downloads folder exists (just in case)
+mkdir -p "$HOME/Downloads"
+
+# Check if the target directory already exists to prevent git errors
+if [ -d "$TARGET_DIR" ]; then
+    echo "Error: The folder '$TARGET_DIR' already exists."
+    echo "Please remove it first or rename it before running this script."
+    exit 1
+fi
+
+# Clone the repository directly into the target directory
+git clone "$REPO_URL" "$TARGET_DIR"
+
+# Verify if the clone was successful
+if [ $? -eq 0 ]; then
+    echo "Success! The repository has been cloned to: $TARGET_DIR"
+else
+    echo "Error: Failed to clone the repository. Check the URL or your internet connection."
+    exit 1
+fi#!/usr/bin/env bash
 # ╔══════════════════════════════════════════════════════╗
 # ║         dank-niri-config  —  Safe Installer          ║
 # ║   https://github.com/tm0090/dank-niri-config         ║
