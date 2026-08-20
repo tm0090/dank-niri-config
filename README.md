@@ -1,6 +1,6 @@
  
 
-## ⚡ Quick Install
+## ⚡ Quick copy to downloads folder 
 
 > **Requires:** `curl` or `wget` — no `git` needed.
 
