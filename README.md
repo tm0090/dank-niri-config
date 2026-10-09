@@ -12,5 +12,7 @@ previously i have uploaded the dank settings directly. but these can break betwe
 
 these are the core functions that gives me back my original dank setup. and from there i can customize it further. 
 
-### Dank Linux Website: https://danklinux.com/
-### Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
+
+
+> Dank Linux Website: https://danklinux.com/
+> Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
