@@ -14,5 +14,9 @@ these are the core functions that gives me back my original dank setup. and from
 
 
 
+
+
+
 > Dank Linux Website: https://danklinux.com/
+
 > Dank Linux Repo: https://github.com/AvengeMedia/DankMaterialShell
