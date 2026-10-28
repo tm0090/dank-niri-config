@@ -5,10 +5,11 @@ previously i have uploaded the dank settings directly. but these can break betwe
 
 ## the optimal dank settings:
 
-1. search icon scale and set it to 140%
-2. under dank bar > appearance > spacing > set edge spacing to 0 % and bar size to negative (-4%)
-3. set bar opacity as liking 
-4. search corner radius and set this to 5%
+1. search icon scale (bar>appearance>) and set it to 140%
+2. search spacing (bar>appearance) set edge spacing to 0 % and size to negative (-4%). Scroll down, under widget section turn on override opacity and st it to 30%
+3. turn on dock, set position to right. 
+4. search corner radius, select fixed and set this to 5%
+5. set opacity for everything under interface style.
 
 these are the core functions that gives me back my original dank setup. and from there i can customize it further. 
 
